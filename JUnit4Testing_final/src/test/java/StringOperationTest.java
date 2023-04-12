@@ -15,49 +15,49 @@ public class StringOperationTest {
 
     // Testing:- reverse method with non-empty string.
     @Test
-    public void testReversee_reverse_with_non_empty_string() {
+    public void testReversee_givenNonEmptyInput_shouldReturnName() {
         //String reversedString = stringUtils.reverse("Rishika");
         assertEquals("akihsiR", stringOperation.reverse("Rishika"));
     }
 
     // Testing:- reverse method with empty string.
     @Test
-    public void testReverse_reverse_with_empty_string() {
+    public void testReverse_givenEmptyInput_shouldReturnEmpty() {
         String reversedString = stringOperation.reverse("");
         assertEquals("", reversedString);
     }
 
     // Testing:- isEmpty() with non-empty method.
     @Test
-    public void testEmpty_with_non_empty_method() {
+    public void testEmpty_givenNonEmptyMethod_shouldReturnResult() {
         Boolean emptyString = stringOperation.isEmpty("hello");
         assertEquals(false, emptyString);
     }
 
     // Testing:- isEmpty method with empty method.
-    @Test
-    public void testEmpty_with_empty_method() {
+    @Test    
+    public void testEmpty_givenEmptyMethod_shouldReturnResult() {
         Boolean emptyString = stringOperation.isEmpty("");
         assertEquals(true, emptyString);
     }
 
     // Testing:- isPalindrome method with palindrome string.
     @Test
-    public void testIsPalindrome_with_valid_palindrome_string() {
+    public void testIsPalindrome_givenValidPalindrome_shouldReturnTrue() {
         Boolean isPalindromeOrNot = stringOperation.isPalindrome("maam");
         assertEquals(true, isPalindromeOrNot);
     }
 
     // Testing:- isPalindrome method with non-palindrome string.
     @Test
-    public void testIsPalindrome_with_invalid_palindrome_string() {
+    public void testIsPalindrome_givenInvalidpalindrome_shouldReturnFalse() {
         Boolean isPalindromeOrNot = stringOperation.isPalindrome("Java Studio");
         assertEquals(false, isPalindromeOrNot);
     }
 
     // Testing:- isPalindrome method with empty string.
     @Test
-    public void testIsPalindrome_with_empty_string() {
+    public void testIsPalindrome_givenEmptyData_shouldReturnFalse() {
         Boolean isPalindromeOrNot = stringOperation.isPalindrome("");
         assertEquals(false, isPalindromeOrNot);
     }
